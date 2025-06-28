@@ -13,18 +13,16 @@ Read mero about the gsap.timeline() method.
 <h1>Code Example</h1>
 
 
-import {gsap} from 'gsap';
-import {useGSAP} from '@gsap/react';
 
-function App() {
-  
-  // TODO : Implement the gsap timeline
 
-  const timeline = gsap.timeline({
+    import {gsap} from 'gsap;
+    import {useGSAP} from'@gsap/react';
+    function App(){
+    //TODO : Implement the gsap timeline
+    const timeline = gsap.timeline({
     repeat:-1, repeatDelay:1,yoyo:true
-  });
-  useGSAP(()=>{
-
+    });
+    useGSAP(()=>{
     timeline.to('#yellow-box',{
       x:250,
       rotation:360,
@@ -50,12 +48,11 @@ function App() {
       duration:2,
       ease:'back.inOut'
     })
-
-  },[])
-
-  return (
+    },[])
+    return (
     <>
       <div>
+
        
         <h1 className='font-mono text-[3.2em] text-[#fff] ml-7 mt-7'>GsapTimeline</h1>
         <div className='ml-[8em] mt-5'>
@@ -79,9 +76,9 @@ function App() {
       </div>
     
     </>
-  )
-}
-
-export default App
+    )
+    }
+    export default App;
+    
 
 
