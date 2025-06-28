@@ -1,12 +1,20 @@
-# React + Vite
+#📦 GSAP .to() Animation Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a basic usage of the gsap.to() method from the GreenSock Animation Platform (GSAP).
 
-Currently, two official plugins are available:
+🔹 The gsap.to() method is used to animate HTML elements from their current state to a new state.
+For example, moving, scaling, rotating, or fading an element can all be done using this method.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔹 This project animates a blue box (#blue-box) using the gsap.to() method, moving it smoothly on component mount.
+<h1>Code Example</h1>
 
-## Expanding the ESLint configuration
+useGSAP(() => {<br/>
+  gsap.to('#blue-box', {<br/>
+    x: 250,<br/>
+    duration: 1,<br/>
+    ease: "power2.out"<br/>
+  });<br/>
+}, []);
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ <p className='text-[rgb(83,77,73)] mt-6'>Read mero about the <span className='text-blue-400 '><a href="https://gsap.com/docs/v3/GSAP/gsap.to()/">gsap.to()</a></span> method.</p>
+
