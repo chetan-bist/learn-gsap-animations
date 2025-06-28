@@ -7,9 +7,9 @@ The gsap.from() method is similar to the gsap.to() method, but the difference is
 
 gsap.from() method animates elements from a new state to their current state, while the gsap.to() method animates elements from their current state a new state
 
-Read mero about the gsap.from() method.
+ <p className='text-[rgb(83,77,73)] mt-6'>Read mero about the <span className='text-blue-400 '><a href="https://gsap.com/docs/v3/GSAP/Timeline/from()/">gsap.from()</a></span> method.</p>
 
-    <h1>code example</h1>
+<h1>Code Example</h1>
 
      useGSAP(()=>{
 
@@ -21,5 +21,6 @@ Read mero about the gsap.from() method.
       duration: 2,
       ease: 'power1.inOut'
     })
+      },{});
 
-  },{});
+
